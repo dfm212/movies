@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/movies-web/static/css/main.817f96f6.chunk.css",
-    "main.js": "/movies-web/static/js/main.c8bcc195.chunk.js",
-    "main.js.map": "/movies-web/static/js/main.c8bcc195.chunk.js.map",
-    "runtime~main.js": "/movies-web/static/js/runtime~main.174440c0.js",
-    "runtime~main.js.map": "/movies-web/static/js/runtime~main.174440c0.js.map",
-    "static/css/2.ad9eb4b5.chunk.css": "/movies-web/static/css/2.ad9eb4b5.chunk.css",
-    "static/js/2.6a9168ca.chunk.js": "/movies-web/static/js/2.6a9168ca.chunk.js",
-    "static/js/2.6a9168ca.chunk.js.map": "/movies-web/static/js/2.6a9168ca.chunk.js.map",
-    "index.html": "/movies-web/index.html",
-    "precache-manifest.326b8ddfd96cef35c1e32be74f5444f7.js": "/movies-web/precache-manifest.326b8ddfd96cef35c1e32be74f5444f7.js",
-    "service-worker.js": "/movies-web/service-worker.js",
-    "static/css/2.ad9eb4b5.chunk.css.map": "/movies-web/static/css/2.ad9eb4b5.chunk.css.map",
-    "static/css/main.817f96f6.chunk.css.map": "/movies-web/static/css/main.817f96f6.chunk.css.map"
+    "main.css": "/movies/static/css/main.817f96f6.chunk.css",
+    "main.js": "/movies/static/js/main.a4fa2382.chunk.js",
+    "main.js.map": "/movies/static/js/main.a4fa2382.chunk.js.map",
+    "runtime~main.js": "/movies/static/js/runtime~main.712e9881.js",
+    "runtime~main.js.map": "/movies/static/js/runtime~main.712e9881.js.map",
+    "static/css/2.ad9eb4b5.chunk.css": "/movies/static/css/2.ad9eb4b5.chunk.css",
+    "static/js/2.6a9168ca.chunk.js": "/movies/static/js/2.6a9168ca.chunk.js",
+    "static/js/2.6a9168ca.chunk.js.map": "/movies/static/js/2.6a9168ca.chunk.js.map",
+    "index.html": "/movies/index.html",
+    "precache-manifest.438c37e02563921139eec2d8fd284c6f.js": "/movies/precache-manifest.438c37e02563921139eec2d8fd284c6f.js",
+    "service-worker.js": "/movies/service-worker.js",
+    "static/css/2.ad9eb4b5.chunk.css.map": "/movies/static/css/2.ad9eb4b5.chunk.css.map",
+    "static/css/main.817f96f6.chunk.css.map": "/movies/static/css/main.817f96f6.chunk.css.map"
   }
 }
