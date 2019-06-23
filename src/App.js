@@ -1,26 +1,67 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import ls from 'local-storage'
+import Lists from './lists/lists'
+// Import Materialize
+import 'materialize-css/dist/css/materialize.min.css';
+import M from "materialize-css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const API = 'http://www.omdbapi.com/?';
+const KEY = '&apikey=4e96eab0';
+const MOVIE = 's='
+const INFO = 'i=';
+const PLOT = '&plot'
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      resultList: ls.get('likeList') || [],
+      likeList: ls.get('likeList') || [],
+      movieInfo: ""
+    };
+    // preserve the initial state in a new object
+    this.baseState = this.state.inputVal;
+  }
+  searchValue = (e) => {
+    fetch(API + MOVIE + e.target.value + KEY)
+      .then(response => response.json())
+      .then(data => this.setState({ resultList: data.Search }));
+  }
+  searchInfo = (e) => {
+    fetch(API + INFO + e + PLOT + KEY)
+    .then(response => response.json())
+    .then( data => {
+      this.setState({ movieInfo: data })
+      // console.log(data)
+    })
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault(); 
+    this.setState({
+      content: null
+      })
+  }
+
+  componentDidMount() {
+    // Auto initialize all the things!
+    M.AutoInit();
+  }
+
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.handleSubmit} onClick={this.resetForm} >
+          <input type="text" placeholder="Search.." onChange={this.searchValue}  />
+        </form>
+
+        <Lists lists={this.state} searchInfo={this.searchInfo}/>
+
+      </div>
+    );
+  }
 }
 
 export default App;

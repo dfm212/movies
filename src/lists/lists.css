@@ -1,0 +1,7 @@
+.movies-list{
+    display: grid;
+    grid-template-columns: 35px 60px auto 80px;
+}
+.poster{
+    max-width: 50px;
+}
