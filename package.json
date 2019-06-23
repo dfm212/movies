@@ -2,7 +2,7 @@
   "name": "movies",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dfm212.github.io/movies-web",
+  "homepage": "https://dfm212.github.io/movies",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "local-storage": "^2.0.0",
