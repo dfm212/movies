@@ -11,14 +11,29 @@ const KEY = '&apikey=4e96eab0';
 const MOVIE = 's='
 const INFO = 'i=';
 const PLOT = '&plot'
+const INIT = [
+  {
+      "Title": "Batman Begins",
+      "Year": "2005",
+      "imdbID": "tt0372784",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZmUwNGU2ZmItMmRiNC00MjhlLTg5YWUtODMyNzkxODYzMmZlXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
+  },
+  {
+      "Title": "Batman v Superman: Dawn of Justice",
+      "Year": "2016",
+      "imdbID": "tt2975590",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+  }]
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      resultList: ls.get('likeList') || [],
-      likeList: ls.get('likeList') || [],
+      resultList: ls.get('likeList') || INIT,
+      likeList: ls.get('likeList', INIT) || INIT,
       movieInfo: ""
     };
     // preserve the initial state in a new object

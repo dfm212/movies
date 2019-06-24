@@ -56,8 +56,8 @@ class Lists extends Component {
                         <div onClick= { () =>
                         this.props.searchInfo(r.imdbID)
                     }  className="movies-list collapsible-header">
-                          <i className="material-icons " onClick={ () =>                 this.handleClick(r)  } >favorite</i>
-                          <div><img src={r.Poster} alt="poster"                 className="poster" /></div>
+                          <i className="material-icons " onClick={ () => this.handleClick(r)  } >favorite_border</i>
+                          <div><img src={r.Poster} alt="poster" className="poster" /></div>
                           <div>{r.Title}</div>
                           <div>{r.Year}</div>
                         </div>
@@ -86,8 +86,8 @@ class Lists extends Component {
                         <div onClick= { () =>
                         this.props.searchInfo(r.imdbID)
                     }  className="movies-list collapsible-header">
-                          <i className="material-icons " onClick={ () =>                 this.handleClick(r)  } >favorite</i>
-                          <div><img src={r.Poster} alt="poster"                 className="poster" /></div>
+                          <i className="material-icons " onClick={ () => this.handleClick(r)  } >favorite</i>
+                          <div><img src={r.Poster} alt="poster" className="poster" /></div>
                           <div>{r.Title}</div>
                           <div>{r.Year}</div>
                         </div>
